@@ -7,6 +7,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Date;
 
 public class Main {
@@ -26,6 +29,25 @@ public class Main {
         address1.setAddressDescription("Description");
         address1.setAddressCityMetro(true);
         address1.setAddedDate(new Date());
+
+        FileInputStream fileInputStream;
+        try {
+            fileInputStream = new FileInputStream("src/main/resources/image.png");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        byte[] data;
+        try {
+            data = new byte[fileInputStream.available()];
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            fileInputStream.read(data);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        address1.setImage(data);
 
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();

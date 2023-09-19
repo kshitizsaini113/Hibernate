@@ -22,7 +22,8 @@ public class Address {
     @Column(name = "added_date")
     @Temporal(TemporalType.DATE)
     private Date addedDate;
-    @Lob
+
+    @Column(columnDefinition="bytea")
     private byte[] image;
 
     public Address() {
