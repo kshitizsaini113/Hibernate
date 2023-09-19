@@ -1,15 +1,13 @@
-package com.kshitizsaini113.Hibernate002.Entity;
+package com.kshitizsaini113.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
 @Entity
-@Table(name = "student_hibernate002")
 public class Student {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int studentID;
     private String studentName;
     private String studentSchool;
