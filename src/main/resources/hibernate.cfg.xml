@@ -13,5 +13,6 @@
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
+        <mapping class="com.kshitizsaini113.Hibernate002.Entity.Student" />
     </session-factory>
 </hibernate-configuration>
