@@ -10,10 +10,12 @@
         <property name="connection.username">postgres</property>
         <property name="connection.password">changeit</property>
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <mapping class="com.kshitizsaini113.Entity.Student" />
         <mapping class="com.kshitizsaini113.Entity.Address" />
+        <mapping class="com.kshitizsaini113.Entity.Country" />
+        <mapping class="com.kshitizsaini113.Entity.EmbeddableCapital" />
     </session-factory>
 </hibernate-configuration>
