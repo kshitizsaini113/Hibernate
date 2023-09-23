@@ -17,5 +17,7 @@
         <mapping class="com.kshitizsaini113.Entity.Address" />
         <mapping class="com.kshitizsaini113.Entity.Country" />
         <mapping class="com.kshitizsaini113.Entity.EmbeddableCapital" />
+        <mapping class="com.kshitizsaini113.Entity.Question" />
+        <mapping class="com.kshitizsaini113.Entity.Answer" />
     </session-factory>
 </hibernate-configuration>
