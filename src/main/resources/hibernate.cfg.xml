@@ -19,5 +19,7 @@
         <mapping class="com.kshitizsaini113.Entity.EmbeddableCapital" />
         <mapping class="com.kshitizsaini113.Entity.Question" />
         <mapping class="com.kshitizsaini113.Entity.Answer" />
+        <mapping class="com.kshitizsaini113.Entity.Question1" />
+        <mapping class="com.kshitizsaini113.Entity.Answer1" />
     </session-factory>
 </hibernate-configuration>
