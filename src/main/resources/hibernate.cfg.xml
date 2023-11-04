@@ -21,5 +21,7 @@
         <mapping class="com.kshitizsaini113.Entity.Answer" />
         <mapping class="com.kshitizsaini113.Entity.Question1" />
         <mapping class="com.kshitizsaini113.Entity.Answer1" />
+        <mapping class="com.kshitizsaini113.Entity.Employee" />
+        <mapping class="com.kshitizsaini113.Entity.Project" />
     </session-factory>
 </hibernate-configuration>
