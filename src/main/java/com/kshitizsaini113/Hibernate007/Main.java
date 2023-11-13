@@ -1,4 +1,4 @@
-package com.kshitizsaini113.HIbernate007;
+package com.kshitizsaini113.Hibernate007;
 
 import com.kshitizsaini113.Entity.Answer1;
 import com.kshitizsaini113.Entity.Question1;
