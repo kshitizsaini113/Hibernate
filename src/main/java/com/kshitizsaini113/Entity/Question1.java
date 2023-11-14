@@ -11,7 +11,7 @@ public class Question1 {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int questionId;
     private String question;
-    @OneToMany(mappedBy = "question")
+    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
     private List<Answer1> answers;
 
     public Question1() {
