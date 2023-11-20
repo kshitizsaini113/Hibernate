@@ -24,6 +24,16 @@ public class Main {
             System.out.println(stu);
         }
 
+        String queryString2 = "from Student as s where s.studentID>:x";
+        Query<Student> query2 = session.createQuery(queryString2, Student.class);
+        query2.setParameter("x", "2");
+
+        List<Student> list2 = query2.list();
+
+        for(Student stu: list2) {
+            System.out.println(stu);
+        }
+
         session.close();
         sessionFactory.close();
     }
